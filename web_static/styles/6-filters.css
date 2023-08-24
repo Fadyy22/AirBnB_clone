@@ -9,6 +9,20 @@
     position: relative;
     margin-bottom: 20px;
 }
+@media (max-width: 480px) {
+    .filters {
+        width: 385px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (min-width: 481px) and (max-width: 992px){
+    .filters {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 .filters button {
     font-size: 18px;
     background-color: #FF5A5F;
@@ -26,7 +40,7 @@
 .locations {
     border-right: 1px solid #DDDDDD;
 }
-.locations, .amenities {
+.filters .locations, .filters .amenities {
     height: 100%;
     width: 25%;
     display: flex;
@@ -34,14 +48,24 @@
     flex-direction: column;
     position: relative;
 }
-.locations h3, .amenities h3 {
+@media (max-width: 480px) {
+    .filters .locations, .filters .amenities {
+        display: none;
+    }
+}
+.filters .locations h3, .filters .amenities h3 {
     font-weight: 600;
     margin-left: 30px;
 }
-.locations h4, .amenities h4 {
+.filters .locations h4, .filters .amenities h4 {
     font-weight: 400;
     font-size: 14px;
     margin-left: 30px;
+}
+@media (max-width: 768px) {
+    .filters .locations h4, .filters .amenities h4 {
+        display: none;
+    }
 }
 ul.popover {
     display: none;
