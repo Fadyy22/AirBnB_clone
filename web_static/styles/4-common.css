@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     margin: 0;
@@ -12,4 +13,11 @@ body {
 .container {
     max-width: 1000px;
     margin: 30px auto 30px;
+}
+ul {
+    list-style: none;
+    padding: 10px;
+}
+ul li {
+    padding-left: 20px;
 }
